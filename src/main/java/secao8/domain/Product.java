@@ -16,11 +16,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                ", quantity=" + quantity +
-                '}';
+        return String.format("Produto -> %s, R$ %.2f, %d, Total: R$ %.2f%n", name, price, quantity, totalValueInStock());
     }
 
     public double totalValueInStock() {

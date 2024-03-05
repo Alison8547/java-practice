@@ -14,13 +14,13 @@ public class ProductTest {
         product.setPrice(scanner.nextDouble());
         product.setQuantity(scanner.nextInt());
 
-        System.out.printf("Produto -> %s, R$ %.2f, %d, Total: R$ %.2f%n", product.getName(), product.getPrice(), product.getQuantity(), product.totalValueInStock());
+        System.out.println(product);
         System.out.println("Entre com um numero pra adicionar no stock:");
         product.addProducts(scanner.nextInt());
-        System.out.printf("Produto update -> %s, R$ %.2f, %d, Total: R$ %.2f%n", product.getName(), product.getPrice(), product.getQuantity(), product.totalValueInStock());
+        System.out.println(product);
         System.out.println("Entre com um numero pra remover no stock:");
         product.removeProducts(scanner.nextInt());
-        System.out.printf("Produto update -> %s, R$ %.2f, %d, Total: R$ %.2f%n", product.getName(), product.getPrice(), product.getQuantity(), product.totalValueInStock());
+        System.out.println(product);
 
 
     }
