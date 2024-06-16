@@ -1,5 +1,7 @@
 package secao18.domain;
 
+import secao18.service.TaxService;
+
 public class BrazilTaxService implements TaxService {
     @Override
     public Double tax(Double amount) {

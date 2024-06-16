@@ -2,7 +2,7 @@ package secao18.test;
 
 import secao18.domain.BrazilTaxService;
 import secao18.domain.CarRental;
-import secao18.domain.RentalService;
+import secao18.service.RentalService;
 import secao18.domain.Vehicle;
 
 import java.time.LocalDateTime;

@@ -1,4 +1,4 @@
-package secao18.domain;
+package secao18.service;
 
 public interface TaxService {
     Double tax(Double amount);

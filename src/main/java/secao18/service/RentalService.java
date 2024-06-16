@@ -1,4 +1,7 @@
-package secao18.domain;
+package secao18.service;
+
+import secao18.domain.CarRental;
+import secao18.domain.Invoice;
 
 import java.time.Duration;
 
