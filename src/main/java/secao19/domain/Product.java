@@ -40,6 +40,14 @@ public class Product implements Comparable<Product> {
         this.price = price;
     }
 
+    public static boolean myPredicateStatic(Product p) {
+        return p.getPrice() >= 100.0;
+    }
+
+    public boolean myPredicateNoStatic() {
+        return price >= 100.0;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
