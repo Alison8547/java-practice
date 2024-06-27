@@ -48,6 +48,10 @@ public class Product implements Comparable<Product> {
         return price >= 100.0;
     }
 
+    public static String upperCaseStaticFunction(Product p) {
+        return p.getName().toUpperCase();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

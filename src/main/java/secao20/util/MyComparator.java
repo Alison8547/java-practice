@@ -1,4 +1,4 @@
-package secao20.domain;
+package secao20.util;
 
 import secao19.domain.Product;
 
