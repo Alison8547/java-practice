@@ -1,5 +1,6 @@
 package streams.test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -14,12 +15,26 @@ public class Exemplos {
 
         System.out.println(collect);
 
+        
+
     }
 
     public static <T> Map<Boolean, List<T>> partitioning(List<T> list, Predicate<T> predicate) {
         return list.stream()
                 .collect(Collectors.partitioningBy(predicate, Collectors.toList()));
 
+    }
+
+    public static <T> List<T> predicateGeneric(List<T> list, Predicate<T> predicate) {
+        List<T> result = new ArrayList<>();
+
+        for (T t : list) {
+            if (predicate.test(t)) {
+                result.add(t);
+            }
+        }
+
+        return result;
     }
 }
 
